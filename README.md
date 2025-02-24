@@ -23,3 +23,5 @@ Clone this repository to your local machine:
 ```sh
 git clone https://github.com/your-username/sports-projection.git
 cd sports-projection
+```
+## Smaller part of a stat projection tool used by a startup
