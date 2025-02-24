@@ -1,6 +1,7 @@
 # Sports Performance Projection Algorithm
 
 ## Overview
+This function is a smaller part of a stat projection tool used by a startup
 This repository contains the function **`synthesize_projection`**, which generates a dynamic performance projection for a player using:
 
 - **Sportsbook betting lines** (weighted by volume and probability)
@@ -24,4 +25,3 @@ Clone this repository to your local machine:
 git clone https://github.com/your-username/sports-projection.git
 cd sports-projection
 ```
-## Smaller part of a stat projection tool used by a startup
