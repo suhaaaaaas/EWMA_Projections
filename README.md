@@ -13,10 +13,10 @@ The function intelligently **blends these sources** based on available data, ens
 - **The projection dynamically adapts** to sample sizes for each data source
 
 ## Features
-✔️ **Market-informed projections** using sportsbook data  
-✔️ **Prioritizes recent performance** using EWMA for season and H2H stats  
-✔️ **Handles missing data cases gracefully**  
-✔️ **Prevents extreme values from dominating projections**  
+- **Market-informed projections** using sportsbook data  
+- **Prioritizes recent performance** using EWMA for season and H2H stats  
+- **Handles missing data cases gracefully**  
+- **Prevents extreme values from dominating projections**  
 
 ## Installation
 Clone this repository to your local machine:
