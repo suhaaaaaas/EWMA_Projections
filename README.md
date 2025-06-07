@@ -23,6 +23,6 @@ The function intelligently **blends these sources** based on available data, ens
 ## Installation
 Clone this repository to your local machine:
 ```sh
-git clone https://github.com/your-username/sports-projection.git
+git clone https://github.com/suhaaaaaas/sports-projection.git
 cd sports-projection
 ```
