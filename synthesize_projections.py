@@ -34,26 +34,6 @@ def compute_h2h_avg(historical_stats):
 
     return sum(filtered_h2h_values) / len(filtered_h2h_values) if filtered_h2h_values else 0
 
-
-def get_book_data(row, prop_name, bookmaker_df):
-    shorthand_name = prop_name_mapping.get(prop_name, prop_name)
-    name = row['Name'].replace('.', '').strip().lower()
-    bookmaker_df['player_name'] = bookmaker_df['player_name'].str.replace('.', '', regex=False).str.strip().str.lower()
-
-    player_lines = bookmaker_df[
-        (bookmaker_df['player_name'] == name) &
-        (bookmaker_df['prop_name'] == shorthand_name)
-    ]
-
-    # Ensure `player_lines` is a list of tuples (line, volume, odds)
-    if not player_lines.empty:
-        extracted_lines = player_lines['lines'].tolist()
-        processed_lines = [extract_numbers(value) for value in extracted_lines]
-        return [item for sublist in processed_lines for item in sublist]  # Flatten the list
-
-    return []  # Ensure it returns an empty list, not None
-
-
 def synthesize_projection(book_lines, historical_stats, alpha_static=0.70, h2h_alpha=0.85):
     """
     Synthesize a projection by dynamically weighting book lines, season history, and H2H data.
